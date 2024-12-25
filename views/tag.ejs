@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= data.title %> - Dev Code</title>
-  </head>
-  <body>
+<%- include('./partial/header') %>
+<%- include('./partial/navbar') %>
+
     <% if (data.img) { %>
     <img src="<%= data.img %>" alt="" />
     <% } %>
@@ -18,5 +13,4 @@
     <% for (post of data.posts){ %>
     <p><%= post.title %> - <%= post.author %></p>
     <% } %>
-  </body>
-</html>
+<%- include('./partial/footer') %>
