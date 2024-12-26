@@ -1,0 +1,16 @@
+<%- include('./partial/header') %>
+<%- include('./partial/navbar') %>
+
+    <% if (data.img) { %>
+    <img src="<%= data.img %>" alt="" />
+    <% } %>
+
+    <h1>Tags : <%= data.title %></h1>
+    <h2>Followers : <%= data.followers %></h2>
+    <p><%= data.description %></p>
+    <hr />
+
+    <% for (post of data.posts){ %>
+    <p><%= post.title %> - <%= post.author %></p>
+    <% } %>
+<%- include('./partial/footer') %>

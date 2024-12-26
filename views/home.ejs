@@ -1,13 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>Halaman Home EJS</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem id veritatis quam illum cumque molestias in? Sunt temporibus explicabo labore consequuntur, nobis asperiores corporis modi consequatur fugiat vel neque!</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis est exercitationem ipsum, distinctio magni beatae quis, vitae impedit accusantium in ratione officiis voluptatibus ullam necessitatibus, officia esse ut tempore?</p>
-</body>
-</html>
+<%- include('./partial/header') %> <%- include('./partial/navbar') %>
+
+<h1>Halaman Home EJS</h1>
+
+<h3><%= 'Hello World'.toUpperCase() %></h3>
+
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem id
+  veritatis quam illum cumque molestias in? Sunt temporibus explicabo labore
+  consequuntur, nobis asperiores corporis modi consequatur fugiat vel neque!
+</p>
+
+<p>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corporis
+  est exercitationem ipsum, distinctio magni beatae quis, vitae impedit
+  accusantium in ratione officiis voluptatibus ullam necessitatibus, officia
+  esse ut tempore?
+</p>
+
+<%- include('./partial/footer') %>
